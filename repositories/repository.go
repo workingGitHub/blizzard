@@ -89,7 +89,6 @@ type DeckTable struct {
 |字段		   | 字段类型 	|字段含义		|备注|
 |--------	|--------	|----		|---|
 |CardID	    |  String 	|卡牌ID	| 主键  	|
-|Version	|  int 	    |卡牌版本	|   	|
 |CardName	|  String 	|卡牌名称 	|   	|
 |CardSet	|  int 		|卡牌类组	|基础/经典/加基森|
 |CardType	|  int 		|卡牌类型	|随从/法术/英雄卡/武器|

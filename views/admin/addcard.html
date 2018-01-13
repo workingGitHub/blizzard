@@ -1,0 +1,31 @@
+<form action="/admin/addcard" method="POST">
+    <div class="container">
+        <label><b>name</b></label>
+        <input type="text" placeholder="卡牌名称" name="CardName" required>
+
+        <button type="submit">addcard</button>
+    </div>
+</form>
+
+<!--
+卡牌表：
+
+|字段		   | 字段类型 	|字段含义		|备注|
+|CardID	    |  String 	|卡牌ID	| 主键  	|
+|CardName	|  String 	|卡牌名称 	|   	|
+|CardSet	|  int 		|卡牌类组	|基础/经典/加基森|
+|CardType	|  int 		|卡牌类型	|随从/法术/英雄卡/武器|
+|Faction	|  int 		|卡牌派系	|通用/法..猎/污..玉莲帮|
+|Rarity		|  int 		|稀有程度	|基本/基础/稀有/史诗/传说|
+|Cost		|  int 		|卡牌费用   ||
+|Atk		|  int 		|攻击力    |武器-攻击力/随从-攻击力|
+|Health		|  int 		|血量	     |武器-耐久/随从-血量|
+|AttackType |  int 		|攻击类型  |普通攻击/随机攻击/主动攻击|
+|CardTextInHand|int|随从类型|嘲讽/圣盾/冲锋/隐藏/剧毒/法伤+1+2+5/免疫/吸血/|
+|CardRace	| int|随从种族|普通/野兽/元素/鱼人/恶魔/机械/龙/海盗 |
+|Actor-Card	| String|Actor处理函数|在卡组中处理方式|
+|Actor-Mudi	| String|Actor处理函数|在墓地中处理方式|
+|Actor-Hand	| String|Actor处理函数|在手牌中处理方式|
+|Actor-Battle| String|Actor处理函数|在战场中处理方式|
+
+/>

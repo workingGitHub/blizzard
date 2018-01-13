@@ -45,15 +45,15 @@ func main() {
 	})
 	userService := services.NewUserService(repo)
 	fmt.Println("userService:", userService)
-	/* Register our controllers.
-	app.Controller("/users", new(controllers.UsersController),
+	// 管理员账户 用于添加卡牌
+	app.Controller("/admin", new(controllers.AdminController),
 		// Add the basic authentication(admin:password) middleware
 		// for the /users based requests.
-		middleware.BasicAuth,
+		controllers.AdminBasicAuth,
 		// Bind the "userService" to the UserController's Service (interface) field.
 		userService,
 	)
-	*/
+
 	sessManager := sessions.New(sessions.Config{
 		Cookie:  "sessioncookiename",
 		Expires: 24 * time.Hour,
