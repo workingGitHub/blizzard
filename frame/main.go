@@ -1,15 +1,5 @@
 package BattleFrame
 
-type usr interface {
-	input // 用于获取输入信息
-	output // 用于获取输出信息
-}
-
-type context  interface{
-	
-}
-
-event()
 /*
 状态机包括：
 1.init状态
@@ -31,12 +21,3 @@ inithook()
 #等待双方选牌
 
 */
-// usr 主要用于获取输入和输出
-func NewBattleFrame(u1 usr,u2 usr)(context,error)
-
-func Run(u1 usr,u2 usr) {
-	// step1 创建对战平台上下文  context
-	// 进入init状态
-	context.gotostatue(INIT)
-	context.run()	
-}
