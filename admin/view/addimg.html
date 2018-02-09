@@ -1,12 +1,12 @@
-{{ define "addimg"}}
+
 <html>
     <head>  
         <title>文件上传</title>  
     </head> 
-	<form action=/admin/addimg method="post" enctype="multipart/from-data">
+	{{ . }}
+	<form action=/admin/addimg method="post" enctype="multipart/form-data">
 		<input type="text" name="name" value="艾雅夫人" />	
 		<input type="file" name="uploaded"/>	
 		<input type="submit"/>		
 	</form>
 </html>
-{{ end }}
